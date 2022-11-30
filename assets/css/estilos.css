@@ -120,17 +120,30 @@ body{
 }
 
 .cartao__conteudo{
+    display: grid;
     padding: 16px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cartao__destaque{
+    grid-column: span 2;
 }
 
 .cartao__titulo{
     font-size: 1.2rem;
     font-weight: 700;
+    grid-column: span 2;
 }
 
-cartao__info{
+.cartao__perfil{
+    color: #95999c;
+    font-size: 0.9rem;
+    grid-column: span 2;
+}
+
+.cartao__info{
     display: flex;
-    align-items: cente;
+    align-items: center;
     color: #95999c
 }
 
@@ -162,6 +175,7 @@ cartao__info{
 
 .cartao__botao--destaque{
     width: 100%;
+    grid-column: span 2;
 }
 
 .cartao__botao--destaque{
