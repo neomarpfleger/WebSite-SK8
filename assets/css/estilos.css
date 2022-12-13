@@ -49,7 +49,7 @@ body{
         background-color: #1D232A;
         display: grid;
         column-gap: 32px;
-        grid-auto-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
         padding: 16px 60px;
         height: 80px;
         box-sizing: border-box;
@@ -90,10 +90,6 @@ body{
         content:"\e98d";
         color: #ffffff;
         font-size: 1.5rem;
-    }
-
-    .cabecalho__notificacao::before{
-
     }
 }
 
@@ -176,7 +172,7 @@ body{
 }
 
 .principal{
-    padding: 24px;
+    padding: 24px 16px;
     display: grid;
     gap: 16px;
 }
@@ -312,7 +308,7 @@ body{
     .cartao__item{
         display: grid;
         grid-template-columns: auto 1fr;
-        gap: 8px
+        gap: 8px;
     }
 
     .cartao__item-thumbnail{
